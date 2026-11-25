@@ -1,5 +1,3 @@
-import math
-
 class Inventory:
     def __init__(self):
         self.items = {}
@@ -25,7 +23,7 @@ class Inventory:
     def total_value(self):
         total = 0.0
         for item in self.items.values():
-            total += item["quantity"] * item["price"]
+            total += item["quantity"] * item["price"] * 1.0
         return round(total, 2)
 
     def report(self):
