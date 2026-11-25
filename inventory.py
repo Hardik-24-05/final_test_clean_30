@@ -34,3 +34,7 @@ class Inventory:
             item = self.items[name]
             lines.append(f"{name}: {item['quantity']} @ {item['price']}")
         return "\n".join(lines)
+
+
+def circle_area(radius):
+    return math.pi * radius * radius
